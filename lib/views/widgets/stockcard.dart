@@ -25,6 +25,7 @@ class StockCard extends StatelessWidget {
               '\$${stock.price.toStringAsFixed(2)}',
               style: const TextStyle(fontSize: 16),
             ),
+           
             Text(
               '${stock.change >= 0 ? '+' : ''}${stock.change.toStringAsFixed(2)}%',
               style: TextStyle(
