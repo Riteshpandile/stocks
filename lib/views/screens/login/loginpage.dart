@@ -28,7 +28,8 @@ class _StocksState extends State<Loginpage> {
     final password = _passwordController.text;
 
     if (username == 'riteshpandile' && password == 'Pass@123') {
-      context.go(RoutePaths.home);
+       context.go(RoutePaths.home);
+       
     } else {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text('Invalid username or password')),
