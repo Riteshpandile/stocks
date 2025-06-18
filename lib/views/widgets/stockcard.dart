@@ -10,7 +10,7 @@ class StockCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
-      child: Card(
+      child: Card(  
         color: Colors.white,
        shape: RoundedRectangleBorder(side: BorderSide(color: Colors.blue.shade100, width: 1.0),
        borderRadius: BorderRadius.circular(12),),
