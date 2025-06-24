@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:stocks/models/stocksmodel.dart';
-import 'package:stocks/services/sharedpreference.dart';
 
 class StockCard extends StatelessWidget {
   final StockModel stock;
@@ -23,6 +22,8 @@ class StockCard extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
               Text("\$ ${stock.price}", style: TextStyle(fontSize: 16)),
+        
+
         
               Text(
                 " ${stock.change >= 0 ? '+' : ''}${stock.change.toStringAsFixed(2)}%",
